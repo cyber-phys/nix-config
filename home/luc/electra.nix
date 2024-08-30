@@ -5,7 +5,7 @@
     ./features/pass
   ];
   home.persistence."/persist/${config.home.homeDirectory}" = lib.mkForce {};
-  home.username = "gabriel";
+  home.username = "luc";
   home.packages = [
     pkgs.inputs.nix-gl.nixGLIntel
     pkgs.juju

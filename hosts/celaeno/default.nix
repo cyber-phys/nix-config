@@ -4,7 +4,7 @@
     ./services
 
     ../common/global
-    ../common/users/gabriel
+    ../common/users/luc
     ../common/optional/docker.nix
   ];
 

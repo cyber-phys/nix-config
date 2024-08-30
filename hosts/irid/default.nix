@@ -11,8 +11,7 @@
     ./hardware-configuration.nix
 
     ../common/global
-    ../common/users/gabriel
-    ../common/users/layla
+    ../common/users/luc
 
     ../common/optional/pantheon.nix
     ../common/optional/quietboot.nix
@@ -27,7 +26,7 @@
   };
 
   networking = {
-    hostName = "maia";
+    hostName = "irid";
     useDHCP = true;
   };
 

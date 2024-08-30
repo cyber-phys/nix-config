@@ -144,10 +144,19 @@
     };
 
     homeConfigurations = {
+    # Secondary desktop
+    "luc@irid" = lib.homeManagerConfiguration {
+      modules = [./home/luc/irid.nix ./home/luc/nixpkgs.nix];
+      pkgs = pkgsFor.x86_64-linux;
+      extraSpecialArgs = {
+        inherit inputs outputs;
+      };
+    };
+
       # Standalone HM only
       # Work laptop
-      "gabriel@electra" = lib.homeManagerConfiguration {
-        modules = [ ./home/gabriel/electra.nix ./home/gabriel/nixpkgs.nix ];
+      "luc@electra" = lib.homeManagerConfiguration {
+        modules = [ ./home/luc/electra.nix ./home/luc/nixpkgs.nix ];
         pkgs = pkgsFor.x86_64-linux;
         extraSpecialArgs = {
           inherit inputs outputs;
@@ -155,48 +164,48 @@
       };
 
       # Main desktop
-      "gabriel@atlas" = lib.homeManagerConfiguration {
-        modules = [./home/gabriel/atlas.nix ./home/gabriel/nixpkgs.nix];
+      "luc@atlas" = lib.homeManagerConfiguration {
+        modules = [./home/luc/atlas.nix ./home/luc/nixpkgs.nix];
         pkgs = pkgsFor.x86_64-linux;
         extraSpecialArgs = {
           inherit inputs outputs;
         };
       };
       # Secondary desktop
-      "gabriel@maia" = lib.homeManagerConfiguration {
-        modules = [./home/gabriel/maia.nix ./home/gabriel/nixpkgs.nix];
+      "luc@maia" = lib.homeManagerConfiguration {
+        modules = [./home/luc/maia.nix ./home/luc/nixpkgs.nix];
         pkgs = pkgsFor.x86_64-linux;
         extraSpecialArgs = {
           inherit inputs outputs;
         };
       };
       # Personal laptop
-      "gabriel@pleione" = lib.homeManagerConfiguration {
-        modules = [./home/gabriel/pleione.nix ./home/gabriel/nixpkgs.nix];
+      "luc@pleione" = lib.homeManagerConfiguration {
+        modules = [./home/luc/pleione.nix ./home/luc/nixpkgs.nix];
         pkgs = pkgsFor.x86_64-linux;
         extraSpecialArgs = {
           inherit inputs outputs;
         };
       };
       # Core server (Vultr)
-      "gabriel@alcyone" = lib.homeManagerConfiguration {
-        modules = [./home/gabriel/alcyone.nix ./home/gabriel/nixpkgs.nix];
+      "luc@alcyone" = lib.homeManagerConfiguration {
+        modules = [./home/luc/alcyone.nix ./home/luc/nixpkgs.nix];
         pkgs = pkgsFor.x86_64-linux;
         extraSpecialArgs = {
           inherit inputs outputs;
         };
       };
       # Build and game server (Oracle)
-      "gabriel@celaeno" = lib.homeManagerConfiguration {
-        modules = [./home/gabriel/celaeno.nix ./home/gabriel/nixpkgs.nix];
+      "luc@celaeno" = lib.homeManagerConfiguration {
+        modules = [./home/luc/celaeno.nix ./home/luc/nixpkgs.nix];
         pkgs = pkgsFor.aarch64-linux;
         extraSpecialArgs = {
           inherit inputs outputs;
         };
       };
       # Media server (RPi)
-      "gabriel@merope" = lib.homeManagerConfiguration {
-        modules = [./home/gabriel/merope.nix ./home/gabriel/nixpkgs.nix];
+      "luc@merope" = lib.homeManagerConfiguration {
+        modules = [./home/luc/merope.nix ./home/luc/nixpkgs.nix];
         pkgs = pkgsFor.aarch64-linux;
         extraSpecialArgs = {
           inherit inputs outputs;

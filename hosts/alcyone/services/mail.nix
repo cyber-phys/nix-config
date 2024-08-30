@@ -24,7 +24,7 @@
     localDnsResolver = false;
     loginAccounts = {
       "hi@m7.rs" = {
-        hashedPasswordFile = config.sops.secrets.gabriel-mail-password.path;
+        hashedPasswordFile = config.sops.secrets.luc-mail-password.path;
         aliases = map (d: "@" + d) domains;
       };
       "grafana@m7.rs" = lib.mkIf config.services.grafana.enable {
@@ -68,7 +68,7 @@
   '';
 
   sops.secrets = {
-    gabriel-mail-password.sopsFile = ../secrets.yaml;
+    luc-mail-password.sopsFile = ../secrets.yaml;
     grafana-mail-password-hashed.sopsFile = ../secrets.yaml;
   };
 

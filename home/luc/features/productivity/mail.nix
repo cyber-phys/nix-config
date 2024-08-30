@@ -8,7 +8,7 @@
   pass = "${config.programs.password-store.package}/bin/pass";
 
   common = rec {
-    realName = "Gabriel Fontes";
+    realName = "Luc Chartier";
     gpg = {
       key = "7088 C742 1873 E0DB 97FF 17C2 245C AB70 B4C2 25E9";
       signByDefault = true;
@@ -36,7 +36,7 @@ in {
           primary = true;
           address = "hi@m7.rs";
           aliases = [
-            "gabriel@gsfontes.com"
+            "luc@gsfontes.com"
             "eu@misterio.me"
           ];
           passwordCommand = "${pass} ${smtp.host}/${address}";

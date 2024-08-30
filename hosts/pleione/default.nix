@@ -11,7 +11,7 @@
     ./hardware-configuration.nix
 
     ../common/global
-    ../common/users/gabriel
+    ../common/users/luc
 
     ../common/optional/peripherals.nix
     ../common/optional/greetd.nix

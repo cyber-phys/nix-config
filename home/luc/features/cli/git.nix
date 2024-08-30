@@ -47,7 +47,7 @@ in {
       pushall = "!git remote | xargs -L1 git push --all";
       add-nowhitespace = "!git diff -U0 -w --no-color | git apply --cached --ignore-whitespace --unidiff-zero -";
     };
-    userName = "Gabriel Fontes";
+    userName = "Luc Chartier";
     userEmail = lib.mkDefault "hi@m7.rs";
     extraConfig = {
       init.defaultBranch = "main";

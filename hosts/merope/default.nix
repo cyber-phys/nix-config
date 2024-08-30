@@ -7,7 +7,7 @@
 
     ../common/global
     ../common/optional/wireless.nix
-    ../common/users/gabriel
+    ../common/users/luc
   ];
 
   # Static IP address
